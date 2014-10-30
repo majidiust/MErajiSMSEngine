@@ -1,0 +1,9 @@
+D:\Users\Administrator\documents\visual studio 2010\Projects\SMSEngine\SMSEngine\bin\Release\SMSEngine.exe.config
+D:\Users\Administrator\documents\visual studio 2010\Projects\SMSEngine\SMSEngine\bin\Release\SMSEngine.exe
+D:\Users\Administrator\documents\visual studio 2010\Projects\SMSEngine\SMSEngine\bin\Release\SMSEngine.pdb
+D:\Users\Administrator\documents\visual studio 2010\Projects\SMSEngine\SMSEngine\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Users\Administrator\documents\visual studio 2010\Projects\SMSEngine\SMSEngine\obj\x86\Release\SMSEngine.exe
+D:\Users\Administrator\documents\visual studio 2010\Projects\SMSEngine\SMSEngine\obj\x86\Release\SMSEngine.pdb
+C:\Users\majid\Desktop\Projects\SMSEngine\SMSEngine\bin\Release\SMSEngine.exe.config
+C:\Users\majid\Desktop\Projects\SMSEngine\SMSEngine\obj\x86\Release\SMSEngine.exe
+C:\Users\majid\Desktop\Projects\SMSEngine\SMSEngine\obj\x86\Release\SMSEngine.pdb

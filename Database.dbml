@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Meraji" Class="DatabaseDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=79.175.165.203\SQLEXPRESS,9095;Initial Catalog=Meraji;User ID=hiva" SettingsObjectName="SMSEngine.Properties.Settings" SettingsPropertyName="MerajiConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Installation" Member="Installations">
+    <Type Name="Installation">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SoftwareLisenceID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MachineKey" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SMSID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="SM_Installation" Member="SM" ThisKey="SMSID" OtherKey="ID" Type="SM" IsForeignKey="true" />
+      <Association Name="SoftwareLisence_Installation" Member="SoftwareLisence" ThisKey="SoftwareLisenceID" OtherKey="id" Type="SoftwareLisence" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Softwares" Member="Softwares">
+    <Type Name="Software">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Qty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DefaultInstallation" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[Desc]" Member="Desc" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="Software_SoftwareLisence" Member="SoftwareLisences" ThisKey="ID" OtherKey="SoftwareID" Type="SoftwareLisence" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SMS" Member="SMs">
+    <Type Name="SM">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="[From]" Member="From" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="[To]" Member="To" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Msg" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="SM_Installation" Member="Installations" ThisKey="ID" OtherKey="SMSID" Type="Installation" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SoftwareLisence" Member="SoftwareLisences">
+    <Type Name="SoftwareLisence">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SoftwareID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Lisence" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SoftwareCRC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="num" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="SoftwareLisence_Installation" Member="Installations" ThisKey="id" OtherKey="SoftwareLisenceID" Type="Installation" />
+      <Association Name="Software_SoftwareLisence" Member="Software" ThisKey="SoftwareID" OtherKey="ID" Type="Software" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
