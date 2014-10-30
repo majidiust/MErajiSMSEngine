@@ -5,18 +5,18 @@
     <Setting Name="MerajiConnectionString" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Data Source=79.175.165.203\SQLEXPRESS,9095;Initial Catalog=Meraji;User ID=hiva;Password=P@ssw0rd&lt;/ConnectionString&gt;
+  &lt;ConnectionString&gt;Data Source=94.232.169.195;Initial Catalog=Meraji;User ID=UserMeraji;Password=P@ssw0rd&lt;/ConnectionString&gt;
   &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
-      <Value Profile="(Default)">Data Source=79.175.165.203\SQLEXPRESS,9095;Initial Catalog=Meraji;User ID=hiva;Password=P@ssw0rd</Value>
+      <Value Profile="(Default)">Data Source=94.232.169.195;Initial Catalog=Meraji;User ID=UserMeraji;Password=P@ssw0rd</Value>
     </Setting>
     <Setting Name="MerajiConnectionString1" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Data Source=79.175.165.203\SQLEXPRESS,9095;Initial Catalog=Meraji;User ID=hiva&lt;/ConnectionString&gt;
+  &lt;ConnectionString&gt;Data Source=94.232.169.195;Initial Catalog=Meraji;User ID=UserMeraji&lt;/ConnectionString&gt;
   &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
-      <Value Profile="(Default)">Data Source=79.175.165.203\SQLEXPRESS,9095;Initial Catalog=Meraji;User ID=hiva</Value>
+      <Value Profile="(Default)">Data Source=94.232.169.195;Initial Catalog=Meraji;User ID=UserMeraji</Value>
     </Setting>
   </Settings>
 </SettingsFile>

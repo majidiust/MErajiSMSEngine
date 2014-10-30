@@ -4,3 +4,8 @@ D:\users\administrator\documents\visual studio 2010\Projects\SMSEngine\SMSEngine
 D:\users\administrator\documents\visual studio 2010\Projects\SMSEngine\SMSEngine\bin\Debug\SMSEngine.pdb
 D:\users\administrator\documents\visual studio 2010\Projects\SMSEngine\SMSEngine\obj\x86\Debug\SMSEngine.exe
 D:\users\administrator\documents\visual studio 2010\Projects\SMSEngine\SMSEngine\obj\x86\Debug\SMSEngine.pdb
+D:\Projects\MErajiSMSEngine\bin\Debug\SMSEngine.exe.config
+D:\Projects\MErajiSMSEngine\obj\x86\Debug\SMSEngine.exe
+D:\Projects\MErajiSMSEngine\obj\x86\Debug\SMSEngine.pdb
+D:\Projects\MErajiSMSEngine\bin\Debug\SMSEngine.exe
+D:\Projects\MErajiSMSEngine\bin\Debug\SMSEngine.pdb

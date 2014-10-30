@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Meraji" Class="DatabaseDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=79.175.165.203\SQLEXPRESS,9095;Initial Catalog=Meraji;User ID=hiva" SettingsObjectName="SMSEngine.Properties.Settings" SettingsPropertyName="MerajiConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=94.232.169.195;Initial Catalog=Meraji;User ID=UserMeraji" SettingsObjectName="SMSEngine.Properties.Settings" SettingsPropertyName="MerajiConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.Installation" Member="Installations">
     <Type Name="Installation">
       <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
